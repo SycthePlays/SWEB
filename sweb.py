@@ -30,7 +30,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.sidebar.title("🔧 Parameter Penilaian")
+st.sidebar.title("Parameter Penilaian")
 
 # Logical Thinking
 st.sidebar.subheader("Logical Thinking")
@@ -194,7 +194,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("📊 Visualisasi Penilaian Kandidat")
+st.title("Visualisasi Penilaian Kandidat")
 selected_name = st.selectbox("Pilih Nama:", temp1["Name"])
 row = temp1[temp1["Name"] == selected_name].iloc[0]
 
@@ -213,7 +213,7 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
-st.subheader("📋 Tabel Ringkasan Penilaian")
+st.subheader("Tabel Ringkasan Penilaian")
 # Tampilkan tabel penilaian kandidat
 st.dataframe(
     temp1[["Name", "Logical Thinking", "Analytical Skills", "Leadership", "Overall"]]
@@ -222,7 +222,7 @@ st.dataframe(
     use_container_width=True
 )
 
-st.subheader("📋 Tabel Logical Thinking")
+st.subheader("Tabel Logical Thinking")
 temp1_1 = pd.DataFrame({"Name": df_sorted["Full Name|name-1"], "Experience": data_Uni, "GPA": data_GTA, "Logical Thinking": data_LT})
 # Tampilkan tabel penilaian kandidat
 st.dataframe(
