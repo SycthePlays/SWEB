@@ -177,9 +177,19 @@ temp1["Overall"] = (
 
 st.markdown("""
     <style>
-    /* Ubah warna teks di sidebar */
-    section[data-testid="stSelectbox"] {
-        color: white;
+    /* Target label di sidebar */
+    section[data-testid="stSidebar"] label {
+        color: white !important;
+    }
+
+    /* Target teks pilihan dalam selectbox */
+    div[data-testid="stSelectbox"] div[role="button"] {
+        color: white !important;
+    }
+
+    /* Target ikon panah dropdown */
+    div[data-testid="stSelectbox"] svg {
+        fill: white !important;
     }
     </style>
 """, unsafe_allow_html=True)
