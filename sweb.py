@@ -32,22 +32,23 @@ st.markdown("""
 
 st.markdown("""
     <style>
-    /* Background dan teks dropdown selectbox */
+    /* Kotak dropdown (selectbox) */
     div[data-testid="stSelectbox"] div[role="button"] {
         background-color: white !important;
         color: black !important;
         border-radius: 6px;
-        padding: 4px 8px;
         border: 1px solid #ccc;
+        padding: 4px 8px;
     }
 
-    /* Ikon panah dropdown */
+    /* Panah dropdown */
     div[data-testid="stSelectbox"] svg {
         fill: black !important;
     }
 
-    /* Label di sidebar (jika di sidebar) */
-    section[data-testid="stSidebar"] label {
+    /* Label di sidebar atau main section */
+    section[data-testid="stSidebar"] label,
+    label {
         color: white !important;
     }
     </style>
