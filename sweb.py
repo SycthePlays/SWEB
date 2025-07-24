@@ -175,6 +175,15 @@ temp1["Overall"] = (
     temp1["Leadership"] * w_LS) / (w_LT + w_ANA + w_LS)
 )
 
+st.markdown("""
+    <style>
+    /* Ubah warna teks di sidebar */
+    section[data-testid="stSelectbox"] {
+        color: white;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.title("📊 Visualisasi Penilaian Kandidat")
 selected_name = st.selectbox("Pilih Nama:", temp1["Name"])
 row = temp1[temp1["Name"] == selected_name].iloc[0]
