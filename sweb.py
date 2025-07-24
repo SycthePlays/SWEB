@@ -42,7 +42,7 @@ st.markdown("""
 st.markdown("""
     <style>
     div[data-testid="stSelectbox"] div[role="button"] {
-        background-color: #20244c !important;
+        background-color: #FFFFFF !important;
         color: white !important;
     }
     ul[data-testid="stDropdownMenu"] li {
