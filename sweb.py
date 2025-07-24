@@ -32,34 +32,20 @@ st.markdown("""
 
 st.markdown("""
     <style>
-    /* Kotak yang menampilkan nama kandidat */
     div[data-testid="stSelectbox"] div[role="button"] {
-        background-color: white !important;      /* latar belakang dropdown */
-        color: black !important;                 /* teks yang ditampilkan */
+        color: black !important;
+        background-color: #FFFFFF !important;  /* kalau mau tetap gelap */
         border-radius: 6px;
-        border: 1px solid #ccc;
-        padding: 4px 8px;
+        border: 1px solid #444;
     }
 
-    /* Panel yang muncul saat dropdown dibuka */
-    ul[data-testid="stDropdownMenu"] {
-        background-color: white !important;
-    }
-
-    /* Teks pilihan di dalam dropdown */
-    ul[data-testid="stDropdownMenu"] li {
-        color: white !important;
-        background-color: #20244c !important;    /* bisa diganti sesuai kebutuhan */
-        padding: 8px;
-        border-bottom: 1px solid #444;
-    }
-
-    /* Panah dropdown */
+    /* Panah dropdown jadi hitam */
     div[data-testid="stSelectbox"] svg {
         fill: black !important;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 st.sidebar.title("Parameter Penilaian")
 
@@ -205,8 +191,6 @@ temp1["Overall"] = (
     temp1["Analytical Skills"] * w_ANA +
     temp1["Leadership"] * w_LS) / (w_LT + w_ANA + w_LS)
 )
-
-
 
 st.title("Visualisasi Penilaian Kandidat")
 selected_name = st.selectbox("Pilih Nama:", temp1["Name"])
