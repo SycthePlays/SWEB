@@ -13,6 +13,23 @@ df = pd.read_csv(file_path)
 df_sorted = df.sort_values(by="Full Name|name-1")
 #Degree|radio-4
 
+st.markdown("""
+    <style>
+    /* Ubah warna teks di sidebar */
+    section[data-testid="stSidebar"] {
+        color: white;
+    }
+
+    /* Ubah warna teks slider dan subheader di sidebar */
+    section[data-testid="stSidebar"] .stSlider label,
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3 {
+        color: white !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.sidebar.title("🔧 Parameter Penilaian")
 
 # Logical Thinking
@@ -195,3 +212,20 @@ st.dataframe(
     .reset_index(drop=True),
     use_container_width=True
 )
+
+
+st.markdown("""
+    <style>
+        section[data-testid="stSidebar"] {
+            color: white;
+        }
+        section[data-testid="stSidebar"] h1,
+        section[data-testid="stSidebar"] h2,
+        section[data-testid="stSidebar"] h3 {
+            color: white;
+        }
+        .stSlider label {
+            color: white !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
