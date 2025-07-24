@@ -33,7 +33,7 @@ st.markdown("""
 st.markdown("""
     <style>
     div[data-testid="stSelectbox"] div[role="button"] {
-        color: black !important;
+        color: white !important;
         background-color: #FFFFFF !important;  /* kalau mau tetap gelap */
         border-radius: 6px;
         border: 1px solid #444;
@@ -41,7 +41,7 @@ st.markdown("""
 
     /* Panah dropdown jadi hitam */
     div[data-testid="stSelectbox"] svg {
-        fill: black !important;
+        fill: white !important;
     }
     </style>
 """, unsafe_allow_html=True)
