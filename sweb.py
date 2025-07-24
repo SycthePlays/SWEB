@@ -36,8 +36,8 @@ st.markdown("""
     div[data-testid="stSelectbox"] svg {
         fill: white !important;
     }
-    section[data-testid="stSelectbox"]{
-        color: white !important;
+    section[data-testid="stSelectbox"] {
+        color: white;
     }
     </style>
 """, unsafe_allow_html=True)
