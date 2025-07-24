@@ -30,6 +30,29 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+    <style>
+    /* Background dan teks dropdown selectbox */
+    div[data-testid="stSelectbox"] div[role="button"] {
+        background-color: white !important;
+        color: black !important;
+        border-radius: 6px;
+        padding: 4px 8px;
+        border: 1px solid #ccc;
+    }
+
+    /* Ikon panah dropdown */
+    div[data-testid="stSelectbox"] svg {
+        fill: black !important;
+    }
+
+    /* Label di sidebar (jika di sidebar) */
+    section[data-testid="stSidebar"] label {
+        color: white !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.sidebar.title("Parameter Penilaian")
 
 # Logical Thinking
@@ -175,27 +198,7 @@ temp1["Overall"] = (
     temp1["Leadership"] * w_LS) / (w_LT + w_ANA + w_LS)
 )
 
-st.markdown("""
-    <style>
-    /* Ubah warna background tombol selectbox */
-    div[data-testid="stSelectbox"] div[role="button"] {
-        background-color: #444444 !important;  /* ganti dengan warna yang kamu mau */
-        color: white !important;
-        border-radius: 5px;
-        padding: 4px 8px;
-    }
 
-    /* Ubah warna ikon panah */
-    div[data-testid="stSelectbox"] svg {
-        fill: white !important;
-    }
-
-    /* Ubah warna label selectbox di sidebar */
-    section[data-testid="stSidebar"] label {
-        color: white !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
 
 st.title("Visualisasi Penilaian Kandidat")
 selected_name = st.selectbox("Pilih Nama:", temp1["Name"])
