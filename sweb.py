@@ -32,24 +32,31 @@ st.markdown("""
 
 st.markdown("""
     <style>
-    /* Kotak dropdown (selectbox) */
+    /* Kotak yang menampilkan nama kandidat */
     div[data-testid="stSelectbox"] div[role="button"] {
-        background-color: white !important;
-        color: black !important;
+        background-color: white !important;      /* latar belakang dropdown */
+        color: black !important;                 /* teks yang ditampilkan */
         border-radius: 6px;
         border: 1px solid #ccc;
         padding: 4px 8px;
     }
 
+    /* Panel yang muncul saat dropdown dibuka */
+    ul[data-testid="stDropdownMenu"] {
+        background-color: white !important;
+    }
+
+    /* Teks pilihan di dalam dropdown */
+    ul[data-testid="stDropdownMenu"] li {
+        color: white !important;
+        background-color: #20244c !important;    /* bisa diganti sesuai kebutuhan */
+        padding: 8px;
+        border-bottom: 1px solid #444;
+    }
+
     /* Panah dropdown */
     div[data-testid="stSelectbox"] svg {
         fill: black !important;
-    }
-
-    /* Label di sidebar atau main section */
-    section[data-testid="stSidebar"] label,
-    label {
-        color: white !important;
     }
     </style>
 """, unsafe_allow_html=True)
