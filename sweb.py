@@ -46,7 +46,7 @@ st.markdown("""
         color: white !important;
     }
     ul[data-testid="stDropdownMenu"] li {
-        background-color: #565465 !important;
+        background-color: #FFFFFF !important;
         color: white !important;
     }
     div[data-testid="stSelectbox"] svg {
