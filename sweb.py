@@ -36,9 +36,21 @@ st.markdown("""
     div[data-testid="stSelectbox"] svg {
         fill: white !important;
     }
-            
-    div[data-testid="stSelectbox"] {
-        color: white;
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+    div[data-testid="stSelectbox"] div[role="button"] {
+        background-color: #20244c !important;
+        color: white !important;
+    }
+    ul[data-testid="stDropdownMenu"] li {
+        background-color: #20244c !important;
+        color: white !important;
+    }
+    div[data-testid="stSelectbox"] svg {
+        fill: white !important;
     }
     </style>
 """, unsafe_allow_html=True)
