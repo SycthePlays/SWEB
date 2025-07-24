@@ -50,7 +50,7 @@ st.markdown("""
         color: white !important;
     }
     div[data-testid="stSelectbox"] svg {
-        fill: white !important;
+        fill: #513213 !important;
     }
     </style>
 """, unsafe_allow_html=True)
